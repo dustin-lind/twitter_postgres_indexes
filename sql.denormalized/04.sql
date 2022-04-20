@@ -1,4 +1,4 @@
-SELECT (count(*) - 2) as count
+SELECT count(DISTINCT data->>'id') as count
 FROM tweets_jsonb
 WHERE 
    ( 
